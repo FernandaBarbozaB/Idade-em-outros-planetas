@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Cherry+Swash&family=Patrick+Hand&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-image: url('https://wallpapercave.com/wp/wp6205340.jpg'); /* substitua pela imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(2px);
+  color: #fff;
+}
+
+.container {
+  padding: 2rem;
+  position: relative;
+}
+
+input {
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  width: 80%;
+  max-width: 300px;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background: linear-gradient(to right, #3a86ff, #ff6ec7);
+  color: white;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 10px #fff5;
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff6ec7, #3a86ff);
+  box-shadow: 0 0 20px #fff8;
+}
+
+h1, h2 {
+  text-shadow: 0 0 10px #ffffff99;
+}
+
+.resultado h2 {
+  margin-bottom: 1rem;
+}
+
+.planetas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.planeta-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff33;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 0 10px #ffffff44;
+  backdrop-filter: blur(3px);
+  transition: transform 0.3s ease, color 0.6s ease;
+}
+
+.planeta-card strong {
+  display: block;
+  font-family: 'Cherry Swash', cursive;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  transition: color 0.6s ease;
+}
+
+.planeta-card:hover strong,
+.planeta-card:hover {
+  color: #ff6ec7;
+  transform: scale(1.05);
+}
+
+.planeta-card:hover {
+  color: #ff6ec7;
+}
+
+.planeta-card:hover span {
+  color: #3a86ff;
+}
+
+.planeta-card {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.info-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 3.0rem;
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem;
+  border-radius: 70%;
+  box-shadow: 0 0 10px #ffbde988;
+}
+
+.explicacao {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #ffffff55;
+  display: none;
+  z-index: 10;
+}
+
+.explicacao h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.explicacao button {
+  margin-top: 1rem;
+  width: 100%;
+}
+.info-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+}
+
+.info-text {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  color: #fff9;
+  font-family: 'Patrick Hand', cursive;
+  text-shadow: 0 0 5px #ffffff55;
+}
+
+.resultado button {
+  margin-top: 2rem;
+  background: linear-gradient(to right, #ffadbb, #3a86ff);
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.9rem 1.3rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 8px #ffffff55;
+}
+
+.resultado button:hover {
+  background: linear-gradient(to right, #3a86ff, #ff6ec7);
+  box-shadow: 0 0 13px #ffffffaa;
+}
+.info-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  z-index: 5;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #ffcaf0;
+  font-family: 'Patrick Hand', cursive;
+  text-shadow: 0 0 5px #ffb3d999;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.info-text:hover {
+  color: #ffffff;
+  background-color: #ff6ec7;
+  text-shadow: 0 0 10px #ffffffaa;
+  transform: scale(1.05);
+}
