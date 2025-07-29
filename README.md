@@ -13,4 +13,6 @@ O usuário informa sua idade em anos terrestres e o site automaticamente calcula
 A fórmula utilizada é:
 Idade no planeta = Idade na Terra / Período orbital do planeta
 
+Link para acessar o site:
 
+https://codepen.io/Fernanda-Branco/full/raVoEqL
