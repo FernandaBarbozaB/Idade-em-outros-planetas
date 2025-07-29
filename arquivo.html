@@ -1,0 +1,75 @@
+
+<div class="container">
+  <div class="info-icon" <div class="info-container">
+  <div class="info-icon" onclick="abrirExplicacao()">🪐</div>
+  <p class="info-text">Clique nesse planeta para mais informações:</p>
+</div>
+
+
+  <div class="explicacao" id="explicacao">
+    <h2>Por que minha idade muda?</h2>
+    <p> Como esse site funciona? 
+    <p> Comece preenchendo idade no espaço indicado.
+
+
+<p> Clique no botão “Calcular”.
+
+<p> Você vai ver sua idade aparecendo automaticamente em vários planetas diferentes.
+
+<p> Mas você vai notar algo curioso: sua idade muda em cada planeta.
+→ Isso acontece porque o tempo funciona de forma diferente em cada lugar do Sistema Solar.
+
+      
+      <p> 1. O que estamos calculando?
+Estamos convertendo a idade terrestre (número de anos vividos na Terra) para uma idade equivalente em outros planetas. Isso se baseia no tempo que cada planeta leva para dar uma volta completa ao redor do Sol (ou seja, seu período orbital).
+
+<p> 2. Por que os períodos orbitais são diferentes?
+Cada planeta do Sistema Solar está a uma distância diferente do Sol e, por isso:
+
+Planetas mais próximos, como Mercúrio e Vênus, têm órbitas mais curtas e levam menos tempo para completar uma volta (um "ano").
+
+Planetas mais distantes, como Netuno, têm órbitas muito longas, levando mais tempo para dar uma volta ao redor do Sol.
+
+Por exemplo:
+
+Terra: 1 ano terrestre = 1 volta ao redor do Sol.
+
+Netuno: 1 volta ao redor do Sol = 164.79 anos terrestres!
+
+<p> 3. Como interpretar uma idade menor que 1?
+<p> Quando o resultado é um número menor que 1 (como 0.17), ele representa uma fração do ano daquele planeta. No caso de Netuno:
+
+0.17 anos netunianos é como dizer que você está 17% do caminho para completar seu primeiro aniversário em Netuno. 
+  
+  Isso significa que, na perspectiva de Netuno, você ainda não completou nem um único "ano" em Netuno! Em outras palavras:
+
+Você viveu apenas 0.17 partes de um ano de Netuno, ou seja, cerca de 17% de um ano lá.
+
+
+
+<p> 4. Por que a idade fica tão pequena em planetas distantes?
+Em planetas como Netuno, que têm órbitas muito longas, a passagem de um "ano" netuniano é muito lenta quando comparada à Terra. Então:
+
+Você viveu apenas uma pequena fração de um ano netuniano (0.17, nesse caso).
+  
+<p> Obrigada por ler!
+
+
+    <button onclick="fecharExplicacao()">Entendi!</button>
+  </div>
+
+  <div class="entrada" id="telaInicial">
+    <h1>Calculadora de Idade Planetária</h1>
+    <input type="number" id="idade" placeholder="Digite sua idade na Terra" />
+    <button onclick="calcularIdade()">Calcular 🌌</button>
+  </div>
+
+  <div class="resultado" id="telaResultado" style="display: none;">
+    <h2>Sua idade em outros planetas:</h2>
+    <div class="planetas" id="resultados">
+      <button  
+              <div onclick="voltarInicio()">Voltar ↩️</button>
+
+    </div>
+  </div>
+</div>
